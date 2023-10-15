@@ -1,4 +1,4 @@
-# CRM 🏢
+# CRM 🗂️
 
 REST aplikace vytvořená ve Spring Bootu. Umožňuje kompletní CRUD operace nad databází. 
 
