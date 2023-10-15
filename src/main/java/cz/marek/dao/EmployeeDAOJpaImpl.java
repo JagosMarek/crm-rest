@@ -46,7 +46,6 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO {
 
         entityManager.remove(employee);
     }
-
 }
 
 

@@ -1,6 +1,7 @@
 package cz.marek.restControllers;
 
 import cz.marek.entity.Employee;
+import cz.marek.exception.EmployeeNotFoundException;
 import cz.marek.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +28,7 @@ public class EmployeeRestController {
         Employee employee = employeeService.findById(employeeId);
 
         if (employee == null) {
-            throw new RuntimeException("Employee id not found - " + employeeId);
+            throw new EmployeeNotFoundException();
         }
 
         return employee;
@@ -57,15 +58,13 @@ public class EmployeeRestController {
         Employee employee = employeeService.findById(employeeId);
 
         if (employee == null) {
-            throw new RuntimeException("Employee id not found - " + employeeId);
+            throw new EmployeeNotFoundException();
         }
 
         employeeService.deleteById(employeeId);
 
         return "Delete employee id - " + employeeId;
     }
-
-
 }
 
 
