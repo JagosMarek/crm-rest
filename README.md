@@ -12,7 +12,6 @@ REST aplikace vytvořená ve Spring Bootu. Umožňuje kompletní CRUD operace na
 
 ## Video 🎥
 
-## Screenshots 📷
-
+https://github.com/JagosMarek/crm-rest/assets/128280984/e735ae5d-12d1-4e6d-a672-3647465eb0a0
 
 
