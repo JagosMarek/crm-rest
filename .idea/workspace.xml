@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="028a58df-6333-4626-af4e-519ee8861c92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/dao/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/dao/EmployeeDAOJpaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/dao/EmployeeDAOJpaImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/restControllers/EmployeeRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/restControllers/EmployeeRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cz/marek/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/marek/service/EmployeeServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

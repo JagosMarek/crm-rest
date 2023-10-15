@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Table(name = "employee")
 public class Employee {
 
-    // fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -21,7 +20,10 @@ public class Employee {
     @Column(name = "email")
     private String email;
 
-    // constructors
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "employee_address_id")
+    private EmployeeAddress employeeAddress;
+
     public Employee() {
 
     }
@@ -32,7 +34,6 @@ public class Employee {
         this.email = email;
     }
 
-    // gettery/settery
     public int getId() {
         return id;
     }
@@ -65,7 +66,14 @@ public class Employee {
         this.email = email;
     }
 
-    // toString
+    public EmployeeAddress getEmployeeAddress() {
+        return employeeAddress;
+    }
+
+    public void setEmployeeAddress(EmployeeAddress employeeAddress) {
+        this.employeeAddress = employeeAddress;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -73,6 +81,7 @@ public class Employee {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", employeeAddress=" + employeeAddress +
                 '}';
     }
 }

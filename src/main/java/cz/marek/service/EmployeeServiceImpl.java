@@ -31,6 +31,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Transactional
     @Override
     public Employee save(Employee employee) {
+
+//        if (employee.getEmail().contains("l")) {
+//            throw new RuntimeException("Neeeeeeeee");
+//        }
+
         return employeeDAO.save(employee);
     }
 
